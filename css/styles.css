@@ -64,6 +64,8 @@ a:link
 }
 
 .button {
+    padding: 0;
+    margin: 0;
     border: 1px solid transparent;
 }
 
@@ -94,6 +96,10 @@ a:link
     color: var(--accent-color);
 }
 
+.button-icon {
+    width: 16px;
+    height: 12px;
+}
 
 .logo {
     font-family: 'Raleway';
@@ -185,7 +191,13 @@ a:link
 /* главный титул */
 
 .hero {
-    background-color: #2F303A;
+    max-height: 600px;
+    max-width: 1600px;
+    background: #C4C4C4;
+    background-image: url(../images/Img.jpg);
+    background-color: rgba(47, 48, 58, 0.4);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero {
