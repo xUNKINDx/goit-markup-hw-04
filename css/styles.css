@@ -177,7 +177,7 @@ a:link
 }
 
 .auth-nav .link {
-    font-weight: 500;
+    display: flex;
     font-size: 14px;
     line-height: 1.14;
 
@@ -201,6 +201,8 @@ a:link
 
 .icon-gmail,
 .icon-vector {
+    align-items: center;
+    margin-right: 10px;
     fill: var(--primary-text-color);
 }
 
@@ -448,13 +450,13 @@ a:link
     margin-left: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid #2196F3;
     border-radius: 4px;
 }
 
-.clients-item {
+.clients-link {
     display: flex;
     padding: 16px 32px;
     width: 170px;
@@ -463,8 +465,8 @@ a:link
     border-radius: 4px;
 }
 
-.clients-svg:focus,
-.clients-svg:hover {
+.clients-link:focus > svg,
+.clients-link:hover > svg{
     fill: #2196F3;
 }
 
