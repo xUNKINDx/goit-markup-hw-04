@@ -9,48 +9,48 @@
 
 /* ==========================================
 Single-colored icons can be modified like so:
-.icon-name {
+.name {
   font-size: 32px;
   color: red;
 }
 ========================================== */
 
-.icon-gmail {
+.gmail {
   width: 1.3330078125em;
 }
 
-.icon-group-5 {
+.group-5 {
   width: 1.3408203125em;
 }
 
-.icon-group-2 {
+.group-2 {
   width: 0.76953125em;
 }
 
-.icon-group-3 {
+.group-3 {
   width: 1.0712890625em;
 }
 
-.icon-group-4 {
+.group-4 {
   width: 2.0234375em;
 }
 
-.icon-group-6 {
+.group-6 {
   width: 2.0888671875em;
 }
 
-.icon-group-1 {
+.group-1 {
   width: 0.8720703125em;
 }
 
-.icon-computer {
+.computer {
   width: 1.2958984375em;
 }
 
-.icon-Vector {
+.Vector {
   width: 0.625em;
 }
 
-.icon-watch {
+.watch {
   width: 0.9716796875em;
 }

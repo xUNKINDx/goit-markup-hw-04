@@ -96,9 +96,14 @@ a:link
     color: var(--accent-color);
 }
 
-.button-icon {
+.icon-gmail {
     width: 16px;
     height: 12px;
+}
+
+.icon-vector {
+    width: 10px;
+    height: 16px;
 }
 
 .logo {
@@ -114,7 +119,7 @@ a:link
 /* кнопки в шапке */
 
 .page-header {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
     background: var(--primary-wight-color)
 }
@@ -179,10 +184,27 @@ a:link
     color: var(--primary-text-color);
 }
 
+.auth-nav .link:hover > svg,
+.auth-nav .link:focus > svg {
+    fill: var(--accent-color)
+}
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
+
+.link .icon-vector:focus,
+.link .icon-vector:hover {
+    fill: var(--accent-color);
+}
+
+.icon-gmail,
+.icon-vector {
+    fill: var(--primary-text-color);
+}
+
+.icon-vector
 
 .section-title {
     color: var(--title-text-color);
@@ -242,6 +264,14 @@ a:link
 }
 
 /* преимущества */
+
+.benefits-svg {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    padding: 25px 100px 25px 100px;
+    margin-bottom: 30px;
+}
 
 .benefits .benefits-title {
     margin-bottom: 10px;
@@ -310,6 +340,40 @@ a:link
     background: var(--secondary-wight-color); 
 }
 
+.social {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.employees-list .social-item + .social-item {
+    margin-left: 10px;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+}
+
+.employees .social .a-link:hover,
+.employees .social .a-link:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+    fill: #ffffff;
+}
+
+.employees .social .a-link {
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    fill: #AFB1B8;
+}
+
 .employees .employees-title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -321,6 +385,7 @@ a:link
     color: var(--title-text-color);
 }
 
+
 .employees-list {
     display: flex;
 }
@@ -330,7 +395,7 @@ a:link
 }
 
 .employees-list .item {
-
+    max-width: 270px;
     text-align: center;
 
     background: #FFFFFF;
@@ -355,7 +420,6 @@ a:link
 
 .employees .employees-workname {
     padding-top: 10px;
-    padding-bottom: 30px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -363,6 +427,52 @@ a:link
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.clients-title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.clients {
+    display: flex;
+}
+
+.clients-item + .clients-item {
+    margin-left: 30px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+.clients-item {
+    display: flex;
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-svg:focus,
+.clients-svg:hover {
+    fill: #2196F3;
+}
+
+.clients-svg {
+    display: block;
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
 }
 
 /* footer */
@@ -377,6 +487,11 @@ a:link
     letter-spacing: 0.03em;
 }
 
+.container-footer {
+    display: flex;
+    
+}
+
 .footer .logo-footer {
 
     font-family: 'Raleway';
@@ -389,7 +504,6 @@ a:link
 }
 
 .footer .contacts .contacts-list {
-    /* margin-top: 20px; */
     padding-left: 0;
     margin-top: 20px;
     margin-bottom: 0;
@@ -433,6 +547,57 @@ a:link
 .contacts .gmail-call:hover,
 .contacts .gmail-call:focus {
     color: var(--accent-color);
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+}
+
+
+.connect-item + .connect-item {
+    margin-left: 10px;
+}
+
+.connect-block {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
+
+.connect-link {
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+}
+
+.connect-svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    margin: auto;
+}
+
+.footer .connect-block .connect-link:hover,
+.footer .connect-block .connect-link:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+
+.connect-block-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.footer .connect-block .connect-link {
+    display: flex;
+    border-radius: 50%;
 }
 
 /* стили для portfolio.html */
